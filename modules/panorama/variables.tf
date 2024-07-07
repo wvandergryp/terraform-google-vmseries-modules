@@ -76,7 +76,7 @@ variable "log_disks" {
 variable "machine_type" {
   description = "See the [Terraform manual](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_instance)"
   type        = string
-  default     = "n1-standard-16"
+  default     = "n1-standard-4"
 }
 
 variable "min_cpu_platform" {
