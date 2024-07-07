@@ -27,7 +27,14 @@ networks = {
         priority         = "1000"
         allowed_protocol = "all"
         allowed_ports    = []
-      }
+      },
+      "allow-ingress-ssh-https" = {
+        name             = "allow-ssh-https"
+        source_ranges    = ["<YOUR IP ADDRESS AT HOME>"]
+        priority         = "1000"
+        allowed_protocol = "TCP"
+        allowed_ports    = ["22","443"]
+      } 
     }
   }
 }
